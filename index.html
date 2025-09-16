@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✨ Timetable Generator</h1>
+            <p>Create your perfect schedule with style</p>
+        </div>
+
+        <div class="controls">
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="startTime">Start Time</label>
+                    <input type="time" id="startTime" value="09:00">
+                </div>
+                <div class="input-group">
+                    <label for="endTime">End Time</label>
+                    <input type="time" id="endTime" value="17:00">
+                </div>
+                <div class="input-group">
+                    <label for="slotDuration">Slot Duration (minutes)</label>
+                    <select id="slotDuration">
+                        <option value="30">30 minutes</option>
+                        <option value="45">45 minutes</option>
+                        <option value="60" selected>1 hour</option>
+                        <option value="90">1.5 hours</option>
+                        <option value="120">2 hours</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="input-group">
+                    <label>Days to Include</label>
+                    <div class="days-container">
+                        <label class="day-checkbox">
+                            <input type="checkbox" id="monday" checked>
+                            <span>Monday</span>
+                        </label>
+                        <label class="day-checkbox">
+                            <input type="checkbox" id="tuesday" checked>
+                            <span>Tuesday</span>
+                        </label>
+                        <label class="day-checkbox">
+                            <input type="checkbox" id="wednesday" checked>
+                            <span>Wednesday</span>
+                        </label>
+                        <label class="day-checkbox">
+                            <input type="checkbox" id="thursday" checked>
+                            <span>Thursday</span>
+                        </label>
+                        <label class="day-checkbox">
+                            <input type="checkbox" id="friday" checked>
+                            <span>Friday</span>
+                        </label>
+                        <label class="day-checkbox">
+                            <input type="checkbox" id="saturday">
+                            <span>Saturday</span>
+                        </label>
+                        <label class="day-checkbox">
+                            <input type="checkbox" id="sunday">
+                            <span>Sunday</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="btn btn-primary" id="generateBtn">
+                    <span>Generate Timetable</span>
+                </button>
+                <button class="btn btn-secondary" id="exportBtn">
+                    <span>Export as HTML</span>
+                </button>
+                <button class="btn btn-danger" id="clearBtn">
+                    <span>Clear All</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="timetable-container">
+            <table class="timetable" id="timetable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal for adding subjects -->
+    <div id="subjectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add Subject</h3>
+                <span class="close">&times;</span>
+            </div>
+            
+            <div class="modal-body">
+                <div class="input-group">
+                    <label for="subjectName">Subject Name</label>
+                    <input type="text" id="subjectName" placeholder="Enter subject name" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="teacherName">Teacher/Instructor</label>
+                    <input type="text" id="teacherName" placeholder="Enter teacher name (optional)">
+                </div>
+                
+                <div class="input-group">
+                    <label for="roomNumber">Room/Location</label>
+                    <input type="text" id="roomNumber" placeholder="Enter room number (optional)">
+                </div>
+                
+                <div class="input-group">
+                    <label for="subjectColor">Color Theme</label>
+                    <select id="subjectColor">
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="purple">Purple</option>
+                        <option value="orange">Orange</option>
+                        <option value="red">Red</option>
+                        <option value="teal">Teal</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <button class="btn btn-primary" id="addSubjectBtn">
+                    <span>Add Subject</span>
+                </button>
+                <button class="btn btn-secondary" id="cancelBtn">
+                    <span>Cancel</span>
+                </button>
+                <button class="btn btn-danger" id="deleteSubjectBtn" style="display: none;">
+                    <span>Delete Subject</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Generating your timetable...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
