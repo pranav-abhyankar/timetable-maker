@@ -54,7 +54,7 @@ _Include a screenshot of the generated timetable here_ 🖼️
 ## 💻 Technologies Used
 
 - 🕸️ HTML5 & CSS3 for markup and styling  
-- ⚙️ JavaScript for DOM interaction and timetable logic  
+- ⚙️ JavaScript(ES6) for DOM interaction and timetable logic  
 - 📐 Flexbox and CSS Grid for layout  
 - 🎨 CSS animations and transitions for UI enhancements  
 
