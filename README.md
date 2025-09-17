@@ -93,7 +93,7 @@ This project is open source and available under the [MIT License](LICENSE). ⚖�
 
 Thanks to all contributors and users who help improve this timetable generator. 💡
 
----
+
 
 
 
