@@ -20,7 +20,7 @@ Create your perfect schedule with style using this interactive web-based Timetab
 
 ## 📸 Demo Screenshot
 
-_Include a screenshot of the generated timetable here (optional)_ 🖼️
+_Include a screenshot of the generated timetable here_ 🖼️
 
 ---
 
@@ -54,7 +54,7 @@ _Include a screenshot of the generated timetable here (optional)_ 🖼️
 ## 💻 Technologies Used
 
 - 🕸️ HTML5 & CSS3 for markup and styling  
-- ⚙️ Vanilla JavaScript (ES6) for DOM interaction and timetable logic  
+- ⚙️ JavaScript for DOM interaction and timetable logic  
 - 📐 Flexbox and CSS Grid for layout  
 - 🎨 CSS animations and transitions for UI enhancements  
 
