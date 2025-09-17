@@ -95,6 +95,5 @@ Thanks to all contributors and users who help improve this timetable generator. 
 
 ---
 
-Feel free to customize this README further by adding badges, screenshots, or hosting-specific instructions. 🚀
 
 
