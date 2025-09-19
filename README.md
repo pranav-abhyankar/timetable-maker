@@ -20,7 +20,7 @@ Create your perfect schedule with style using this interactive web-based Timetab
 
 ## 📸 Demo Screenshot
 
-_Include a screenshot of the generated timetable here_ 🖼️
+_Include a screenshot of generated timetable here_ 🖼️
 
 ---
 
